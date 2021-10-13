@@ -1,0 +1,11 @@
+
+        page = "https://www.google.com";
+        self.url = QLineEdit(page)
+        self.url.setPlaceholderText(page)
+
+        self.go = QPushButton("ir")
+        self.go.clicked.connect(self.btnirClicked)
+
+        self.nav_bar = QHBoxLayout()
+        self.nav_bar.addWidget(self.url)
+        
